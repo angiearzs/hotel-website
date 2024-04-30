@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotel - блог</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__nav flex">
+        <div class="header__contacts">
+          <a class="header__logo" href="index.html">
+            <img class="header__logo-pic" src="img/logo.svg" alt="Логотип сети отелей Hotel">
+          </a>
+          <a class="header__phone" href="tel:70000000000">+7 000-000-00-00</a>
+        </div>
+        <a class="header__profile" href="account.html">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.59 7.41L15.17 11H1V13H15.17L11.58 16.59L13 18L19 12L13 6L11.59 7.41ZM20 6V18H22V6H20Z"
+              fill="none" />
+          </svg>
+          Личный кабинет
+        </a>
+      </div>
+
+      <div class="header__navigation flex">
+        <nav class="nav">
+          <button class="nav__btn" id="nav-btn">
+            <span class="nav__btn-line"></span>
+            <span class="nav__btn-line"></span>
+            <span class="nav__btn-line"></span>
+          </button>
+          <ul class="nav__list flex" id="nav-list">
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#about-us">О нас</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#services">Услуги</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#advantages">Преимущества</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#hotel">Размещение</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link nav__link--blog" href="#blog">Блог</a>
+            </li>
+
+            <li class="nav__item">
+              <a class="nav__link" href="index.html#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="header__btns flex">
+          <a class="header__tour" href="#tour">Хочу тур</a>
+          <button class="header__button" id="btn-open">Обратный звонок</button>
+          <div class="header__modal modal" id="modal">
+            <div class="modal__box modal__box--image">
+              <button class="modal__close" id="btn-close">X</button>
+              <h2 class="modal__title">Отправьте нам номер телефона, и мы перезвоним</h2>
+              <p class="modal__desc">
+                Мы ответим на все интересующие вопросы и подберем наилучший вариант
+              </p>
+              <form class="modal__form" id="form">
+                <input class="modal__input" id="modal-name" type="text" placeholder="Ваше имя*" required>
+                <input class="modal__input" id="modal-phone-number" type="tel" placeholder="Номер телефона*" required>
+                <textarea class="modal__textarea" id="modal-question" placeholder="Ваш вопрос*"
+                  required></textarea>
+                <button class="modal__send" type="submit" id="submit">Отправить</button>
+                <p class="modal__confirmation-text" id="confirm-text">Данные отправлены! В ближайшее время наш оператор
+                  с вами свяжется (это после отправки)
+                </p>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="main">
+    <section class="blog-main">
+      <div class="container">
+        <div class="blog-main__inner flex">
+          <div class="blog-main__items">
+            <div class="blog-main__item item-1">
+              <img class="item-1__image" src="img/blog-main/blog-main-1.jpg" alt="Мужчина и женщина с багажом на причале">
+              <div class="item-1__info">
+                <span class="item-1__date">23 сентября, 2022</span> |
+                <a class="item-1__theme" href="#!">Советы путеществующим</a>
+              </div>
+              <a class="item1__link blog-title-link" href="#!">
+                <h3 class="item-1__title blog-title">Что взять в путешествие: полезные советы от экспертов</h3>
+              </a>
+              <p class="item-1__text">
+                Таким образом, разбавленное изрядной долей эмпатии, рациональное мышление играет важную роль
+                в&nbsp;формировании позиций, занимаемых участниками в&nbsp;отношении поставленных задач. Имеется спорная
+                точка зрения, гласящая примерно следующее: тщательные исследования конкурентов неоднозначны и&nbsp;будут
+                разоблачены. Мы&nbsp;вынуждены отталкиваться от&nbsp;того, что убеждённость некоторых оппонентов
+                предоставляет широкие возможности для экономической целесообразности принимаемых решений.
+              </p>
+            </div>
+
+            <blockquote class="blog-main__quote quote">
+              “Равным образом реализация намеченных плановых заданий способствует подготовке и реализации дальнейших
+              направлений развития”,
+              <p class="quote__author">Paul Rand</p>
+            </blockquote>
+
+            <div class="blog-main__item article-popup article-popup--img">
+              <img class="article-popup__picture" src="img/blog-main/blog-main-2.jpg" alt="Женщина в голубом платье на балконе номера отеля">
+              <div class="article-popup__info">
+                <span class="article-popup__date">1 октября, 2022</span> |
+                <a class="article-popup__theme" href="#!">Выбираем отель</a>
+              </div>
+              <a class="article-popup__link blog-title-link" href="#!">
+                <h3 class="article-popup__title blog-title">Ближе к морю или к центру? Разбираемся в отелях курортных
+                  городов</h3>
+              </a>
+            </div>
+
+            <div class="blog-main__item article-slider">
+              <div class="article-slider__box">
+                <img class="article-slider__image" src="img/blog-main/blog-main-3.jpg" alt="Мужчина у стойки регистрации">
+              </div>
+              <div class="article-slider__info">
+                <span class="article-slider__date">8 октября, 2022</span> |
+                <a class="article-slider__theme" href="#!">Виза: правила получения</a>
+              </div>
+              <a class="article-slider__link blog-title-link" href="#!">
+                <h3 class="article-slider__title blog-title">Не только паспорт: какие документы необходимы за границей</h3>
+              </a>
+              <p class="article-slider__text">
+                Равным образом, постоянное информационно-пропагандистское обеспечение нашей деятельности обеспечивает
+                широкому кругу (специалистов) участие в&nbsp;формировании поэтапного и&nbsp;последовательного развития
+                общества. Повседневная практика показывает, что убеждённость некоторых оппонентов говорит
+                о&nbsp;возможностях переосмысления внешнеэкономических политик.
+              </p>
+            </div>
+
+            <div class="blog-main__pagination pagination">
+              <ul class="pagination__list flex">
+                <li class="pagination__item">
+                  <a class="pagination__number pagination__number--active" href="#!">1</a>
+                </li>
+                <li class="pagination__item">
+                  <a class="pagination__number" href="#!">2</a>
+                </li>
+              </ul>
+              <a class="pagination__arrow" href="#!">
+                <svg width="6" height="12" viewBox="0 0 6 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g opacity="0.700126">
+                    <path
+                      d="M5.87341 5.6707L0.734858 0.1357C0.5665 -0.0455414 0.293923 -0.0452368 0.125846 0.136638C-0.0421 0.318488 -0.0416661 0.613073 0.126714 0.794455L4.9594 6.00002L0.126541 11.2056C-0.041818 11.387 -0.0422519 11.6814 0.125673 11.8632C0.209928 11.9544 0.320308 12 0.430689 12C0.540787 12 0.650733 11.9547 0.734837 11.8642L5.87341 6.32932C5.9545 6.24218 6 6.12358 6 6.00002C6 5.87646 5.95437 5.75801 5.87341 5.6707Z"
+                      fill="none" />
+                  </g>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <aside class="blog-main__aside aside">
+            <form class="aside__form">
+              <input class="aside__input" type="text" placeholder="Поиск">
+              <button class="aside__search search" type="submit">
+                <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M11.9579 10.9565L16.7923 15.7909C17.0692 16.0678 17.0692 16.5155 16.7923 16.7924C16.6542 16.9306 16.4729 17 16.2915 17C16.1101 17 15.9288 16.9306 15.7907 16.7924L10.9564 11.9581C9.7997 12.8945 8.32991 13.4583 6.7291 13.4583C3.01889 13.4583 0 10.4394 0 6.72914C0 3.01889 3.01886 0 6.72907 0C10.4393 0 13.4582 3.01893 13.4582 6.72918C13.4582 8.33 12.8944 9.7998 11.9579 10.9565ZM1.41666 6.72914C1.41666 9.65882 3.79946 12.0416 6.7291 12.0416C9.65872 12.0416 12.0415 9.65882 12.0415 6.72914C12.0415 3.79947 9.65875 1.41664 6.7291 1.41664C3.79946 1.41664 1.41666 3.79947 1.41666 6.72914Z"
+                    fill="none" />
+                </svg>
+              </button>
+            </form>
+
+            <div class="aside__category category">
+              <h6 class="category__title">Статьи</h6>
+              <ul class="category__list">
+                <li class="category__item">
+                  <a class="category__link" href="#!">Влоги (1)</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#!">Виза: правила получения (7)</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#!">Безопасность за границей (3)</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#!">Выбираем отель (4)</a>
+                </li>
+                <li class="category__item">
+                  <a class="category__link" href="#!">Советы путеществующим (5)</a>
+                </li>
+              </ul>
+            </div>
+
+            <div class="aside__posts posts">
+              <h6 class="posts__title">Недавние публикации</h6>
+              <ul class="posts__list">
+                <li class="posts__item">
+                  <a class="posts__link" href="#!">
+                    Задача организации, в особенности же реализация намеченных плановых заданий позволяет оценить
+                    значение
+                  </a>
+                  <span class="posts__date">10 июня, 2022</span>
+                </li>
+                <li class="posts__item">
+                  <a class="posts__link" href="#!">
+                    Задача организации, в особенности же реализация
+                  </a>
+                  <span class="posts__date">30 мая, 2022</span>
+                </li>
+                <li class="posts__item">
+                  <a class="posts__link" href="#!">
+                    Задача организации, в особенности же реализация намеченных плановых заданий
+                  </a>
+                  <span class="posts__date">2 мая, 2022</span>
+                </li>
+              </ul>
+            </div>
+
+            <div class="aside__tags tags">
+              <h6 class="tags__title">Тэги</h6>
+              <a class="tags__link" href="#!">Dining room futniture</a>
+              <a class="tags__link" href="#!">Chair</a>
+              <a class="tags__link" href="#!">Table</a>
+              <a class="tags__link" href="#!">Bedroom</a>
+              <a class="tags__link" href="#!">Office Furniture</a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class=" footer__content flex footer-info-img">
+        <div class="footer__info flex">
+          <p class="footer__desc footer-desc">
+            &copy;&nbsp;2012&ndash;2024 Управляющая компания
+            Объединённой сети &laquo;Hotel&raquo;
+          </p>
+          <p class="footer__desc footer-desc-2">
+            Представленная на&nbsp;сайте информация носит справочный характер
+            и&nbsp;не&nbsp;является публичной офертой
+          </p>
+          <div>
+            <a class="footer__desc-colored" href="#!">Пользовательское соглашение</a>
+          </div>
+        </div>
+
+        <address class="footer__address flex">
+          <p class="footer__desc footer__desc--address">Задача организации, в&nbsp;особенности&nbsp;же реализация
+            намеченных заданий позволяет оценить значение систем массового участия.</p>
+          <div class="footer__contacts flex">
+            <a class="footer__desc-colored" href="tel:70000000000">+7 000 000-00-00</a>
+            <a class="footer__desc-colored" href="tel:70000000000">+7 000 000-00-00</a>
+          </div>
+          <div class="footer__contacts flex">
+            <a class="footer__desc-colored" href="mailto:h.otel@mail.ru">h.otel@mail.ru</a>
+            <a class="footer__desc-colored" href="mailto:hotelapp@mail.ru">hotelapp@mail.ru</a>
+          </div>
+        </address>
+
+        <ul class="footer__socials flex">
+          <li class="footer__item">
+            <a class="footer__link" href="#!">
+              <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_370726_100)">
+                  <path d="M17.1779 11.7844C16.3343 11.7844 15.6441 12.449 15.6441 13.2926C15.6441 14.1362 16.3343 14.8263 
+                      17.1523 14.8263C17.9959 14.8263 18.6605 14.1362 18.6605 13.3182C18.6861 12.449 18.0214 11.7844 17.1779 
+                      11.7844ZM17.1779 14.0595C16.7433 14.0595 16.411 13.7272 16.411 13.2926C16.411 12.858 16.7433 12.5257 
+                      17.1779 12.5257C17.6124 12.5257 17.9447 12.8836 17.9447 13.2926C17.9447 13.7272 17.5869 14.0595 17.1779 
+                      14.0595Z" fill="none" />
+                  <path d="M7.7965 9.58598C5.77707 9.56042 4.01327 11.2475 4.06439 13.3948C4.08996 15.3886 5.75151 17.1013 
+                      7.84762 17.0757C9.89261 17.0502 11.5542 15.3886 11.5542 13.3436C11.5542 11.2731 9.89261 9.58598 7.7965 
+                      9.58598ZM7.84762 15.6187C6.49282 15.6698 5.39364 14.5962 5.39364 13.2925C5.39364 11.9633 6.49282 10.9408 
+                      7.71981 10.9663C8.99793 10.9663 10.046 11.9888 10.046 13.2925C10.0715 14.5962 9.04905 15.5676 7.84762 
+                      15.6187Z" fill="none" />
+                  <path d="M12.5 0C5.59815 0 0 5.59815 0 12.5C0 19.4018 5.59815 25 12.5 25C19.4018 25 25 19.4018 25 
+                      12.5C25 5.59815 19.4018 0 12.5 0ZM19.683 17.3568C18.9161 17.8425 18.0726 18.0726 17.1779 
+                      18.0726C16.7945 18.0726 16.411 18.0215 16.0532 17.9192C15.1585 17.6891 14.3916 17.229 13.7525 
+                      16.5644C13.6759 16.4877 13.5992 16.3855 13.4969 16.2832C13.1646 16.7945 12.8323 17.2801 12.5 
+                      17.7914C12.1677 17.2801 11.8354 16.7945 11.5031 16.3088C11.4775 16.3088 11.4775 16.3343 11.4775 
+                      16.3343L11.4519 16.3599C10.6851 17.2801 9.71369 17.817 8.53782 18.0215C7.8732 18.1237 7.23414 
+                      18.0981 6.59509 17.9192C5.7004 17.6636 4.93353 17.2035 4.29447 16.4877C3.68098 15.7975 3.3231 
+                      15.0051 3.16973 14.0849C3.01636 13.2413 3.19529 12.4233 3.24642 12.2188C3.39979 11.6309 3.62985 
+                      11.1196 3.98773 10.6339C4.01329 10.6084 4.01329 10.5317 4.01329 10.5061C3.88548 9.99488 3.62985 
+                      9.53475 3.34867 9.07463C3.27198 8.97238 3.19529 8.87013 3.11861 8.74232V8.71676C3.14417 8.71676 
+                      3.14417 8.71676 3.16973 8.71676C4.11554 8.71676 5.06134 8.71676 6.00715 8.71676C6.05828 8.71676 
+                      6.08384 8.6912 6.13496 8.66564C6.79958 8.23108 7.51533 7.89876 8.25664 7.64314C8.79345 7.4642 
+                      9.33026 7.31083 9.89263 7.20858C10.4294 7.10633 10.9662 7.02964 11.5286 7.00408C12.8579 6.90183 
+                      13.9315 7.02964 14.6472 7.13189C15.184 7.20858 15.6953 7.33639 16.2065 7.48977C17.1012 7.77095 
+                      17.9192 8.15439 18.7116 8.64007C18.7628 8.66564 18.8394 8.6912 18.9161 8.6912C19.8364 8.6912 
+                      20.7566 8.6912 21.6769 8.6912C21.7536 8.6912 21.8302 8.6912 21.9069 8.6912C21.9069 8.71676 21.9069 
+                      8.71676 21.9069 8.71676C21.8558 8.79345 21.8302 8.84457 21.7791 8.92126C21.4724 9.40694 21.1912 
+                      9.89263 21.0378 10.455C21.0122 10.5061 21.0122 10.5572 21.0634 10.6339C21.8814 11.8098 22.137 
+                      13.1135 21.8047 14.5194C21.4468 15.7208 20.7566 16.6667 19.683 17.3568Z" fill="none" />
+                  <path d="M7.71982 11.7844C6.90182 11.7844 6.21164 12.4746 6.21164 13.2926C6.21164 14.1362 6.90182 
+                      14.8008 7.74538 14.8008C8.56338 14.8008 9.25356 14.1106 9.25356 13.267C9.25356 12.449 8.58894 
+                      11.7844 7.71982 11.7844ZM7.74538 14.085C7.31082 14.085 6.95295 13.7527 6.95295 13.2926C6.95295 
+                      12.858 7.28526 12.5257 7.71982 12.5257C8.15438 12.5257 8.48669 12.858 8.51225 13.2926C8.53781 
+                      13.7272 8.17994 14.0595 7.74538 14.085Z" fill="none" />
+                  <path d="M17.1012 9.61152C15.0562 9.66264 13.4458 11.2986 13.4202 13.3436C13.4202 15.4142 15.1073 
+                      17.1268 17.1779 17.1013C19.2484 17.1013 20.9356 15.4397 20.9356 13.3436C20.9356 11.1964 
+                      19.1718 9.56039 17.1012 9.61152ZM17.2801 15.6187C15.9253 15.6698 14.8517 14.5962 14.8517 
+                      13.2925C14.8517 11.9633 15.9509 10.9408 17.1779 10.9663C18.456 10.9663 19.5041 11.9888 19.5041 
+                      13.2925C19.5041 14.5706 18.4816 15.5675 17.2801 15.6187Z" fill="none" />
+                </g>
+                <defs>
+                  <clippath id="clip0_370726_100">
+                    <rect width="25" height="25" fill="none" />
+                  </clippath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#!">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M10.7106 8.32552C10.7106 9.35607 11.546 10.1916 12.5766 10.1916C13.6071 10.1916 14.4426 
+                    9.35607 14.4426 8.32552C14.4426 7.29496 13.6071 6.4595 12.5766 6.4595C11.546 6.4595 10.7106 
+                    7.29496 10.7106 8.32552Z" fill="none" />
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5 25C19.4036 25 25 19.4036 25 12.5C25 5.59644 19.4036 0 12.5 0C5.59644 0 0 5.59644 0 
+                    12.5C0 19.4036 5.59644 25 12.5 25ZM8.06251 8.32546C8.06251 5.83243 10.0835 3.81137 12.5766 
+                    3.81137C15.0697 3.81137 17.0907 5.83243 17.0907 8.32546C17.0907 10.8185 15.0697 12.8397 12.5766 
+                    12.8397C10.0835 12.8397 8.06251 10.8185 8.06251 8.32546ZM17.1176 15.1617C17.0604 15.2076 15.9774 
+                    16.0634 14.1702 16.4316L16.8981 19.1351C17.3778 19.6141 17.3784 20.3912 16.8994 20.8709C16.4205 
+                    21.3506 15.6435 21.3514 15.1636 20.8723L12.5153 18.2933L10.1099 20.8557C9.86912 21.1055 9.54789 
+                    21.2311 9.22631 21.2311C8.91959 21.2311 8.61261 21.117 8.37443 20.8873C7.88644 20.4168 7.8723 
+                    19.6398 8.34283 19.1518L10.932 16.4459C9.07424 16.0864 7.94659 15.2083 7.88852 15.1617C7.3597 
+                    14.7376 7.27476 13.9651 7.69885 13.4362C8.12288 12.9074 8.8953 12.8225 9.42424 13.2465C9.4354 
+                    13.2556 10.6149 14.1416 12.5153 14.1429C14.4157 14.1416 15.5707 13.2556 15.5819 13.2465C16.1109 
+                    12.8225 16.8833 12.9074 17.3073 13.4362C17.7314 13.9651 17.6464 14.7376 17.1176 15.1617Z"
+                  fill="none" />
+              </svg>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#social-3">
+              <svg class="footer__svg" width="25" height="25" viewBox="0 0 25 25" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M12.5 0C5.59815 0 0 5.59815 0 12.5C0 19.4018 5.59815 25 12.5 25C19.4018 25 25 19.4018 25 
+                    12.5C25 5.59815 19.4018 0 12.5 0ZM18.8394 13.8548C19.4274 14.4172 20.0409 14.954 20.5521 
+                    15.593C20.7822 15.8742 21.0122 16.1554 21.1656 16.4877C21.3957 16.9478 21.1912 17.4591 20.7822 
+                    17.4846H18.226C17.5613 17.5358 17.0501 17.2801 16.59 16.82C16.2321 16.4622 15.8998 16.0787 
+                    15.5675 15.6953C15.4397 15.5419 15.2863 15.3885 15.1073 15.2863C14.7495 15.0562 14.4427 15.1329 
+                    14.2638 15.4908C14.0593 15.8742 14.0082 16.2832 13.9826 16.6922C13.957 17.3057 13.7781 17.4591 
+                    13.1646 17.4846C11.8609 17.5358 10.6339 17.3568 9.50919 16.6922C8.51226 16.1043 7.71983 15.3118 
+                    7.05521 14.3916C5.72597 12.6022 4.72903 10.6339 3.80879 8.61451C3.60429 8.15439 3.75767 7.92433 
+                    4.26891 7.89876C5.11247 7.8732 5.93046 7.8732 6.77402 7.89876C7.10633 7.89876 7.33639 8.10326 
+                    7.46421 8.41001C7.92433 9.50919 8.46114 10.5828 9.15132 11.5542C9.33026 11.8098 9.53475 12.0654 
+                    9.79038 12.2699C10.0971 12.4744 10.3016 12.3977 10.455 12.0654C10.5317 11.8609 10.5828 11.6309 
+                    10.6084 11.4008C10.6851 10.6339 10.6851 9.86707 10.5572 9.10019C10.4806 8.58895 10.2249 8.2822 
+                    9.73925 8.17995C9.48363 8.12883 9.53476 8.05214 9.637 7.89876C9.8415 7.6687 10.046 7.51533 
+                    10.4294 7.51533H13.318C13.7781 7.61758 13.8804 7.79652 13.9315 8.25664V11.4775C13.9315 11.6564 
+                    14.0082 12.1932 14.3405 12.2955C14.5961 12.3722 14.775 12.1677 14.9284 12.0143C15.6186 11.273 
+                    16.1043 10.4039 16.5644 9.50919C16.7689 9.10019 16.9223 8.6912 17.1012 8.2822C17.229 7.97545 
+                    17.408 7.82208 17.7658 7.82208H20.5521C20.6288 7.82208 20.7055 7.82208 20.8078 7.84764C21.2679 
+                    7.92433 21.3957 8.12883 21.2679 8.58895C21.0378 9.30469 20.6033 9.91819 20.1687 10.5061C19.7086 
+                    11.1452 19.1973 11.7587 18.7372 12.4233C18.2771 13.0368 18.3026 13.3435 18.8394 13.8548Z"
+                  fill="none" />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
